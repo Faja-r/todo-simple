@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       *{
+        box-sizing: border-box;
+        margin: 0%;
+       } 
+
+body {
+    padding: 0%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    height: 100vh;
+    
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color:#93b0a5;
+    padding: 20px
+}
+
+.index div {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+ 
+}
+
+.index div:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.index i {
+    margin-right: 8px;
+ 
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color:#C4DCD3;
+  }
+
+.main {
+    font-size: 24px;
+    color: #555;
+    padding: 20px;
+    width: 100%;
+    background-color:#acabab;
+    text-align: end;
+     }
+
+
+.task {
+    font-size: 18px;
+    padding: 50px;
+    color: #34574A;
+    background-color:#C4DCD3;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 7%;
+    max-width: 190px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(14, 14, 14, 0.19);
+}
+
+
+.task i {
+   
+    margin-left:35%;
+    margin-top: 20%;
+    color: white;
+    
+}
+.tdo{
+    margin-bottom: 10%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="index">
+                <div><i class="fas fa-list"></i> To-Do</div>
+                <div><i class="fas fa-check"></i> Task</div>
+                <div><i class="far fa-star"></i> Important</div>
+                <div><i class="fas fa-trash"></i> Completed</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="task">add a task
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
